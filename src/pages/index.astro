@@ -1,0 +1,53 @@
+---
+import Badge from "../components/Badge.astro";
+import Layout from "../layouts/Layout.astro";
+import Linkedin from "../components/Icons/Linkedin.astro";
+import GitHub from "../components/Icons/GitHub.astro";
+import SocialPhill from "../components/Icons/SocialPhill.astro";
+---
+
+<Layout title="DanielRivasWeb.">
+  <main>
+    <section class="w-full lg:w-[900px] mx-auto py-44">
+      <img
+        class="rounded-full w-12 h-12 mb-4"
+        src="/src/assets/foto.jpg"
+        alt="Foto de perfil"
+      />
+      <h1
+        class="text-white text-6xl font-bold flex gap-x-4 pb-4 justify-center flex-row"
+      >
+        Hola, Soy Daniel Rivas <div class="flex justify-center items-center">
+          <Badge>Disponible para trabajar</Badge>
+        </div>
+      </h1>
+      <h2 class="text-white text-4xl">
+        1 año de experiencia como <span class="text-green-300"
+          >desarrollador web</span
+        > dedicado a la creacion de aplicaciones y sitios web
+      </h2>
+      <nav class="gap-x-2">
+        <ul class="pt-4 flex text-white items-center">
+          <li class="px-2">
+            <SocialPhill href="#">
+              <Linkedin class="w-6 h-6"  />
+              LinkedIn
+            </SocialPhill>
+          </li>
+          <li class="px-2">
+            <SocialPhill href="#">
+              <GitHub class="w-6 h-6"  />
+              GitHub
+            </SocialPhill>
+          </li>
+      
+        </ul>
+      </nav>
+    </section>
+
+    <style>
+      main {
+      }
+    </style>
+  </main></Layout
+>
